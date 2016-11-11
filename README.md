@@ -36,9 +36,3 @@ Set currentTime(second).
 timer.currentTime = 5;
 ```
 
-Set currentTime(second).
-
-``` js
-timer.currentTime = 5;
-```
-
