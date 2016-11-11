@@ -144,14 +144,14 @@
 		}
 	};
 
-	JustTimer.prototype.addEventListener = function(type, listener){
+	JustTimer.prototype.on = function(type, listener){
 		if ( !this._listeners[type] ) {
 			this._listeners[type] = [];
 		}
 		this._listeners[type].push(listener);
 	};
 
-	JustTimer.prototype.removeEventListener = function(type, listener){
+	JustTimer.prototype.off = function(type, listener){
 		if ( !this._listeners[type] ) {
 			return;
 		}
